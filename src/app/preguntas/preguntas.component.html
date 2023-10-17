@@ -1,0 +1,11 @@
+<h2>PREGUNTAS</h2>
+<ul class="preguntas">
+    <li *ngFor="let unaPregunta of preguntas">
+      <p>{{unaPregunta.pregunta}}</p>
+
+      <div *ngFor="let unaRespuesta of respuestas">
+        <p *ngIf="unaRespuesta.id==unaPregunta.id">{{unaRespuesta.respuesta}}</p>
+      </div>
+      
+    </li>
+</ul>
